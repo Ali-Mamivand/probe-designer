@@ -19,14 +19,18 @@ install.packages(c(
 ```
 
 ### Run Locally
-```r
+```bash
 # Clone the repository
 git clone https://github.com/Ali-Mamivand/probe-designer.git
 cd probe-designer
-
-# Run the app
-shiny::runApp()
 ```
+
+Then open `app.R` in RStudio and click "Run App", or run from R console:
+```r
+# Run the app
+shiny::runApp("app.R")
+```
+
 ### Online Version (No Installation Required)
 
 **Try it now:** [https://alim7227.shinyapps.io/HCR-probe-designer_b/](https://alim7227.shinyapps.io/HCR-probe-designer_b/)
