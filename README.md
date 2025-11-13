@@ -21,7 +21,7 @@ install.packages(c(
 ### Run Locally
 ```r
 # Clone the repository
-git clone https://github.com/Ali.Mamivand/probe-designer.git
+git clone https://github.com/Ali-Mamivand/probe-designer.git
 cd probe-designer
 
 # Run the app
