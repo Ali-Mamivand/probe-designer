@@ -1,6 +1,6 @@
 # HCR v3 & smFISH Probe Designer
 
-A Shiny web application for designing HCR v3 (Hybridization Chain Reaction) and smFISH (single molecule FISH).
+A Shiny application for designing HCR v3 (Hybridization Chain Reaction) and smFISH (single molecule FISH) probes.
 
 
 ## Installation
