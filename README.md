@@ -2,7 +2,6 @@
 
 A Shiny web application for designing HCR v3 (Hybridization Chain Reaction) and smFISH (single molecule FISH).
 
-![App Screenshot](screenshots/main_interface.png)
 
 ## Installation
 
