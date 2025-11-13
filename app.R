@@ -892,15 +892,39 @@ ui <- dashboardPage(
 
       tabItem(tabName = "help",
               # Welcome Banner
-              fluidRow(
-                column(12,
-                       div(class = "welcome-banner",
-                           h2(icon("question-circle"), " Help & Documentation"),
-                           p("Learn how to use the Probe Designer Suite for your FISH experiments.",
-                             tags$span(class = "status-badge", style = "background: #11998e; margin-left: 15px;",
-                                       icon("book"), " User Guide"))
-                       )
-                )
+              tabItem(tabName = "help",
+                      # Welcome Banner
+                      fluidRow(
+                        column(12,
+                               div(class = "welcome-banner",
+                                   h2(icon("question-circle"), " Help & Documentation",
+                                      tags$span(class = "status-badge", style = "background: #11998e; margin-left: 15px;",
+                                                icon("book"), " User Guide")),
+                                   p("This application was developed using knowledge and resources from the ",
+                                     strong("FISHing for RNAs: Classical to Single Molecule Approaches"), 
+                                     " course held at ", strong("EMBL Heidelberg"), "."),
+                                   p("Special thanks to ", strong("Imre Gaspar"), 
+                                     " for his invaluable guidance and for sharing the original smFISH probe design script, as well as to all ",
+                                     strong("EMBO RNAFishing"), 
+                                     " course instructors and organizers for their support and inspiration."),
+                                   tags$hr(style = "border-color: rgba(255,255,255,0.5); margin: 15px 0;"),
+                                   p(style = "font-size: 15px;",
+                                     icon("github"), " Source code: ",
+                                     tags$a(href = "https://github.com/Ali-Mamivand/probe-designer", 
+                                            target = "_blank",
+                                            style = "color: #ffffff; text-decoration: underline; font-weight: 600;",
+                                            "GitHub Repository")),
+                                   p(style = "font-size: 15px;",
+                                     icon("envelope"), " Contact: ",
+                                     tags$a(href = "mailto:ali.mamivand72@gmail.com",
+                                            style = "color: #ffffff; text-decoration: underline; font-weight: 600;",
+                                            "ali.mamivand72@gmail.com")
+                                     )
+                               )
+                        )
+                      ),
+                      
+                      # Rest of your help content here...
               ),
               
               # Main Help Content
